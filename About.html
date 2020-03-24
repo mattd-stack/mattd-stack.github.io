@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - X-Letic</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #FFFFF5
+        }
+        .title {
+            grid-area: header;
+            text-align: center;
+        }
+        .title * {
+            color:#545454;
+            font-size: 500%;
+            font-family: 'PT Sans', sans-serif;
+            text-align: center;
+            text-decoration: none;
+        }
+        .nav {
+            grid-area: nav;
+            font-family: 'Open Sans', sans-serif;
+            background-color: black;
+            text-align: center;
+        }
+        a.nav {
+            color: white;
+            text-decoration: none;
+            margin: 0px 10px;
+        }
+        a.nav:hover {
+            color: lightgray;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 700px 1fr;
+            grid-template-rows: 105px 25px 5fr 50px;
+            grid-template-areas:
+                    "header header header"
+                    "nav nav nav"
+                    ". main ."
+                    "footer footer footer";
+        }
+        .main {grid-area: main;
+            font-family: 'Open Sans', sans-serif;
+            justify-content: center;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .footer {
+            grid-area: footer;
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            font-size: 14px;
+            line-height: 14px;
+            margin-bottom: 50px;
+            color: #555555;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="title">
+        <a  href="Index.html">X-Letic</a>
+    </div>
+    <div class="nav">
+        <a class="nav" href="index.html">Home</a>
+        <a class="nav" href="About.html">About</a>
+    </div>
+    <div class="main">
+        <h1>About</h1>
+        <p>Welcome to my website, X-Letic. While it may look to be the best website ever created, I had some struggles creating it. For example, on my main page, when creating my buttons they were unable to be centered on the page. Later I also had a problem with the buttons splitting into two different sections. In order to circumvent this problem, I used the justify content tool along with CSS Grid in order to make sure that the buttons were consistently centered and together as one. My main sources when trying to fix such problems were w3schools.com and if even then I could not fix the problem Mr. Drenth, like in the button problem. My design was meant to be clean and simple and easy to navigate. The color scheme was inspired by the button tutorial on w3schools.com as they used red, green, blue, and orange for theirs. These colors extended onto my webpages, and allowed the different categories to be distinguished at a glance. All of my text was centered, and laid out in an easy to read manner. This was thought out from the get-go, and can be shown in my early design sketches.Overall, the simplistic layout of my website can be a great selling feature to people in the middle of a workout. Many workout websites are hard to navigate and over-complicated. On the other hand, my website allows the user to instantly access what they want without any pop-ups or complicated menus.</p>
+    </div>
+    <div class="footer">
+        <p> Ashbury Web Design Inc.</p>
+        <a href="mailto:matthew.dobaj@ashbury.ca">Contact The Author</a>
+    </div>
+</div>
+</body>
+</html>

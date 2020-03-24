@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Core - X-Letic</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans&display=swap" rel="stylesheet">
+<style>
+    body {
+        background: #c1ffff;
+        }
+    .title {
+        grid-area: header;
+        text-align: center;
+        }
+    .title * {
+        color:#3B8080;
+        font-size: 500%;
+        font-family: 'PT Sans', sans-serif;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        }
+    .nav {
+        grid-area: nav;
+        font-family: 'Open Sans', sans-serif;
+        background-color: black;
+        text-align: center;
+        }
+    a.nav {color: white;
+        text-decoration: none;
+        margin: 0px 10px;
+        }
+    a.nav:hover {
+        color: lightgray;
+        }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 700px 1fr;
+        grid-template-rows: 105px 25px auto 50px;
+        grid-template-areas:
+                "header header header"
+                "nav nav nav"
+                ". main ."
+                "footer footer footer";
+        }
+    .main {
+        grid-area: main;
+        font-family: 'Open Sans', sans-serif;
+        margin: auto;
+        margin-top: 30px;
+        }
+    h1 {
+        font-size: 2.75em;
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 1.75em;
+    }
+    .footer {
+        grid-area: footer;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        font-size: 14px;
+        line-height: 14px;
+        margin-bottom: 50px;
+        color: #555555;
+        }
+</style>
+<body>
+<div class="container">
+    <div class="title">
+        <p>X-Letic</p>
+    </div>
+    <div class="nav">
+        <a class="nav" href="index.html">Home</a>
+        <a class="nav" href="About.html">About</a>
+    </div>
+    <div class="main">
+        <h1>Core</h1>
+        <h2>Plank</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed luctus elit. Mauris quis nibh lacinia, pulvinar quam et, sodales ipsum. Nunc sit amet augue eu eros placerat ullamcorper et vitae ligula. Proin sed ipsum condimentum, tempus arcu nec, semper massa. Nulla laoreet ornare tellus vitae imperdiet. Vivamus malesuada nec nisi eget egestas. Maecenas vel nulla elit. Nunc ut accumsan ante. Nam orci ipsum, sodales vel lacinia ut, interdum eget leo. Sed vulputate, mauris vitae mattis suscipit, justo sapien rutrum odio, id hendrerit arcu lacus vitae libero. Phasellus non arcu vestibulum, tincidunt metus in, ullamcorper lorem. Ut quis pretium nisl. Curabitur egestas nisi non lorem semper, nec placerat lectus eleifend. Nunc fringilla ornare tortor id mattis. Sed est tortor, dictum vitae sodales nec, ultricies in arcu. Donec iaculis in ipsum quis consequat. Vivamus interdum imperdiet urna id viverra. Nam venenatis erat id diam tempor imperdiet. Quisque viverra velit sed metus.</p>
+        <h2>Crunches</h2>
+    </div>
+    <div class="footer">
+        <p> Ashbury Web Design Inc.</p>
+        <a href="mailto:matthew.dobaj@ashbury.ca">Contact The Author</a>
+    </div>
+</div>
+</body>
+</html>
